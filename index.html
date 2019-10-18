@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>  
+    <title>Fashion Hub</title>
+    <link href='css\index.css' rel='stylesheet' type='text/css'>
+    <link href='css\header.css' rel='stylesheet' type='text/css'>
+ 
+</head>
+<body>
+    <div id="main-container-div">
+        <div class="header">
+            
+            <a  class="logo-title">4Every1</a>
+            <p class="middleText">Explore With Smile </p>
+            <img style="height: 210px; width: 310px;margin:0 0 0 40%;" src="fashion-logos.jpg" alt="Logoo"/>
+                <div class="postButtons">
+                <input id="loginButtonClick" class="topButtons" type="button" onclick="openSignIn()" value="Sign In">
+                <input id="signUpButtonClick" class="topButtons" type="button" onclick="openSignUpButton()" value="Sign Up">
+                 </div>
+         </div>  
+    </div>
+
+    <div id="signInModal" class="modal">
+            <form class="modal-content" >
+                <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
+                <div class="container">
+                <h1>Welcome Back!</h1>
+                <hr>
+                <label for="Username" class="label">
+                    <b>Username</b>
+                </label>
+                <input type="text" placeholder="Enter Username" name="Username" required>
+
+                <label for="psw" class="label">
+                    <b>Password</b>
+                </label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <div class="clearfix" class="label">
+                    
+                    <button type="submit" class="signinbtn">Sign In</button>
+                </div>
+            </div>
+            <div id="signUpPrompt" class="signUpForm">Not a member?
+                <span id="" class="signUp" onclick="openSignUp()">Sign Up</span>
+            </div>
+        </form>
+    </div>
+
+    <div id="signUpModal" class="modal">
+        <div class="modal-content-sigup">
+            <span onclick="onCloseModalClicked()" class="close_signIn" title="Close Modal">&times;</span>
+            <form class="modal-content-sigUp" >
+                <div class="container-signUp">
+
+                    <h1>Get Started</h1>
+                    <hr>
+                    <label for="Fullname" class="label">Full Name</label>
+                    <input type="text" placeholder="Enter Full Name" name="Fullname" required>
+                    <label for="Username" class="label">Username</label>
+                    <input type="text" placeholder="Enter Username" name="Username" required>
+                    <label for="psw" class="label">Password</label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+                    <label for="pswrepeat" class="label">Confirm Password</label>
+                    <input type="password" placeholder="Confirm Password" name="pswrepeat" required>
+                    <div class="clearfix">
+                            <button type="submit" class="signupbtn" >Sign Up</button>
+                        <button type="button" class="cancelbtn" onclick="resetForm()">Clear</button>
+                        
+                    </div>
+                </div>
+            
+            </form>
+        </div>
+        
+    </div>
+
+ 
+    </div>
+    <script src=".\js\header.js">              
+    </script>
+
+
+</body>
+
+</html>
